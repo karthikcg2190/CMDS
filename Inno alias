@@ -1,0 +1,20 @@
+alias fin all_fanin -startpoints_only -to
+alias fout all_fanout -endpoints_only -from
+
+alias my_table set_table_style -name report_timing -max_widths {100,50,10,15,15}
+
+alias rt  report_timing -to
+alias rf  report_timing -from
+alias rtc report_timing -path_type full_clock -to
+alias rfc report_timing -path_type full_clock -from
+alias rts report_timing -path_type summary -to
+alias rfs report_timing -path_type summary -from
+
+alias r_t   report_timing -format {  delay arrival cell instance arc fanout}                                
+alias rtt   report_timing -format {  delay arrival cell instance arc fanout}  -to                          
+alias rtf   report_timing -format {  delay arrival cell instance arc fanout}  -from                        
+alias rttc  report_timing -format {  delay arrival cell instance arc fanout}  -path_type full_clock -to    
+alias rtfc  report_timing -format {  delay arrival cell instance arc fanout}  -path_type full_clock -from  
+alias rtts  report_timing -format {  delay arrival cell instance arc fanout}  -path_type summary -to        
+alias rtfs  report_timing -format {  delay arrival cell instance arc fanout}  -path_type summary -from
+
