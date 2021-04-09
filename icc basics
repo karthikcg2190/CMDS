@@ -1,0 +1,5 @@
+report_app_options *
+
+
+### to fine log
+printvar sh_output_log_file
