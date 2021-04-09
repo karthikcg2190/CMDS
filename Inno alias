@@ -21,3 +21,6 @@ alias rtfs  report_timing -format {  delay arrival cell instance arc fanout}  -p
 alias ts_rt  report_timing -format {  point cell fanout delay arrival }
 alias ts_rts report_timing -format {  point cell fanout delay arrival } -path_type summary
 alias ts_rtc report_timing -format {  point cell fanout delay arrival } -path_type full_clock
+alias ts_rt_pba  report_timing -format {  point cell fanout delay arrival } -retime_mode path -retime path_slew_propagation
+alias ts_rt_pba_sum  report_timing -format {  point cell fanout delay arrival } -retime_mode path -retime path_slew_propagation -path_type end_slack_only
+alias ts_rt_loc  report_timing -format {  point cell fanout delay arrival instance_location}
