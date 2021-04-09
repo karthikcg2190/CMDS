@@ -1,0 +1,3 @@
+proc dump {get_selection } {
+foreach_in_collection a [get_selection ] { puts "[get_object_name $a]"}                                                  
+}
