@@ -1,0 +1,18 @@
+### div into proper columns
+%!column -t
+
+#### sort column wise ( k2 - second col -n is for numbers r is for reverse )
+:%!sort -k2nr
+
+### remove last column
+%s/ [^ ]*$//
+
+
+
+
+### shell sort with count
+
+cat u | sort | uniq -c | sort -k1
+
+
+:%! awk '{print $1}'
